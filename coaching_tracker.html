@@ -169,7 +169,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgrou
       <div style="font-size:10px;color:#C8A84B;font-weight:500;letter-spacing:1px">FORZA LAZIO 🦅</div>
     </div>
   </div>
-  <div class="updated" style="color:#a0bde8">Updated 31 Jul 2026</div>
+  <div class="updated" style="color:#a0bde8">Updated 5 Aug 2026</div>
 </div>
 <div class="tabs">
   <button class="tab-btn on" onclick="showTab('dash',this)">Dashboard</button>
@@ -213,6 +213,7 @@ const C={
       {w:"2026-07-14",cph:3.37,iqs:0.915,td:0.9766,csat:0.857,iadh:0.7414,obs:"CPH 3.37\nIQS 92% — solid\nTD 98% — strong\nCSAT 86% — within range\nIntercom 74% — below floor"},
       {w:"2026-07-21",cph:4.00,iqs:null,td:0.9930,csat:null,iadh:0.8050,obs:"CPH 4.00 — AT POST-PROBATION TARGET. Best week yet.\nTD 99% — exceptional\nIntercom 81% — below floor"},
       {w:"2026-07-28",cph:3.11,iqs:0.967,td:0.9834,csat:null,iadh:0.7949,obs:"CPH 3.11 — above NJ3 floor\nIQS 97% — excellent ✓\nTD 98% — strong ✓\nIntercom 79% — below floor"},
+      {w:"2026-08-04",cph:3.79,iqs:0.975,td:0.9797,csat:null,iadh:0.7882,obs:"CPH 3.79 — above NJ3 floor, best week yet\nIQS 98% — excellent ✓\nTD 98% — strong ✓\nIntercom 79% — below floor"},
     ]},
   Alexa:{cat:"Post-Probation",av:"pp",start:"2025-06-01",active:true,
     profile:"Post-probation, passed to Marci ~Jun 2026. CPH slid from 3.63 to 2.64 then recovered strongly after shadow session 10 Jul. CPH 3.89 w/c 28 Jul — best week. Shadow themes: messages too long, not snoozing, overthinking.",
@@ -229,6 +230,7 @@ const C={
       {w:"2026-07-14",cph:3.58,iqs:0.800,td:0.9872,csat:0.806,iadh:0.8529,obs:"CPH 3.58 — up 0.66, shadow coaching working\nIQS 80% — right on floor\nIntercom 85% — best yet"},
       {w:"2026-07-21",cph:3.17,iqs:1.000,td:0.9880,csat:null,iadh:0.8404,obs:"CPH 3.17 — slight dip from 3.58\nIQS 100% — bounced back\nIntercom 84% — still improving"},
       {w:"2026-07-28",cph:4.28,iqs:0.980,td:0.9893,csat:null,iadh:0.8680,obs:"CPH 4.28 — ABOVE TARGET for the first time! Shadow coaching paid off.\nIQS 98% — excellent ✓\nTD 99% — strong ✓\nIntercom 87% — best yet"},
+      {w:"2026-08-04",cph:null,iqs:null,td:null,csat:null,iadh:null,obs:"⚠️ On holiday this week — no data."},
     ]},
   Moni:{cat:"Needs Support",av:"ns",start:"2024-01-01",active:true,
     profile:"Needs support. CPH nearly doubled from 1.77 in May to 3.37+ in Jul. IQS consistently strong. Shadow session 10 Jul — focus/overthinking/snooze discipline key themes. Intercom adherence below floor throughout but slowly improving.",
@@ -257,6 +259,16 @@ const C={
       {w:"2026-07-21",cph:3.34,iqs:0.908,td:0.9586,csat:null,iadh:0.7699,obs:"First proper volume week — CPH 3.34, above PP floor\nIQS 91% — solid\nTD 96% — strong\nIntercom 77% — below floor"},
       {w:"2026-07-28",cph:3.54,iqs:0.959,td:0.9610,csat:null,iadh:0.7673,obs:"CPH 3.54 — above PP floor, solid week\nIQS 96% — excellent ✓\nTD 96% — strong ✓\nIntercom 77% — below floor"},
       {w:"2026-07-28",cph:3.67,iqs:0.957,td:0.9158,csat:null,iadh:0.7944,obs:"CPH 3.67 — above floor for the first time! Big milestone.\nIQS 96% — excellent ✓\nTD 92% — within range\nIntercom 79% — below floor"},
+      {w:"2026-08-04",cph:3.53,iqs:0.957,td:0.9695,csat:null,iadh:0.7826,obs:"CPH 3.53 — above floor, consistent\nIQS 96% — excellent ✓\nTD 97% — strong ✓\nIntercom 78% — below floor"},
+    ]},
+  Katrin:{cat:"New Joiner",av:"nj",start:"2026-06-01",active:true,
+    profile:"New joiner from 1 Jun 2026. Still in month 3 — NJ thresholds apply. TD adherence exceptional throughout (98–99%). CPH building slowly from 1.2 in late Jun. IQS solid in late July (94–100%). Intercom adherence low in early weeks, improving. Coaching focus TBD.",
+    weeks:[
+      {w:"2026-06-29",cph:1.23,iqs:null,td:0.9893,csat:null,iadh:0.7620,obs:"CPH 1.23 — very early days, training period\nTD 99% — exceptional right from the start ✓\nIntercom 76% — below floor"},
+      {w:"2026-07-06",cph:2.046,iqs:null,td:0.9835,csat:null,iadh:0.7438,obs:"CPH 2.05 — picking up\nTD 98% — strong ✓\nIntercom 74% — below floor"},
+      {w:"2026-07-20",cph:1.704,iqs:null,td:0.9896,csat:null,iadh:0.7776,obs:"CPH 1.70 — slight dip\nTD 99% — exceptional ✓\nIntercom 78% — below floor"},
+      {w:"2026-07-27",cph:1.665,iqs:0.973,td:0.9893,csat:0.889,iadh:0.8461,obs:"CPH 1.67 — IQS reviews starting to come in\nIQS 97% — excellent for a new joiner ✓\nTD 99% — exceptional ✓\nCSAT 89% — solid\nIntercom 85% — improving"},
+      {w:"2026-08-04",cph:1.97,iqs:0.964,td:0.9884,csat:null,iadh:0.7880,obs:"CPH 1.97 — building gradually\nIQS 96% — excellent ✓\nTD 99% — exceptional ✓\nIntercom 79% — below floor"},
     ]},
   Vincent:{cat:"Ended Jun 2026",av:"end",start:"2026-01-01",active:false,
     profile:"Coaching ended Jun 2026 by agreement with manager. CPH volatile throughout (1.85–5.74). TD adherence strong throughout. Intercom adherence slid from 99% to ~78%, never resolved.",
